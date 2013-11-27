@@ -4,7 +4,7 @@ end
 
 beersong( ARGV[0] )
 
-# output :
+# output (if called with 5 beers) :
 
 # => 5 bottles of beer on the wall, 5 bottles of beer!
 # => Take one down, pass it around, 4 bottles of beer on the wall!
