@@ -2,7 +2,7 @@ def beersong( num_at_start )
   # your code goes here
 end
 
-beersong( 5 )
+beersong( ARGV[0] )
 
 # output :
 
