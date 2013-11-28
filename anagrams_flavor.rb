@@ -6,9 +6,9 @@ def anagrams_on_steroids?( a_string, another_string )
   # your code goes here
 end
 
-# O[nlog(n)]
+# complexity = ?
 puts anagrams? "Monica Lewinsky", "Nice silky woman" # => true 
 
-# O[n]
+# complexity = ?
 puts anagrams_on_steroids? "Monica Lewinsky", "Nice silky woman" # => true 
 
