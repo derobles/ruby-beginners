@@ -1,4 +1,4 @@
-def group_mail( emails ) 
+def group_mails( emails ) 
   # your code goes here
   emails_from = {}
 end
@@ -12,7 +12,7 @@ users_emails = %w( bob@yahoo.fr
                    monsieur.mack@gmail.com )
                    
 
-puts group_mail( users_emails ) 
+puts group_mails( users_emails ) 
 
 # => {
 #     "yahoo" => ["bob@yahoo.fr", "bigbox@yahoo.fr"], 
@@ -23,8 +23,8 @@ puts group_mail( users_emails )
 
 
 # Why Symbols ?
-first_grouping = group_mail( users_emails ) 
-second_grouping = group_mail( users_emails ) 
+first_grouping = group_mails( users_emails ) 
+second_grouping = group_mails( users_emails ) 
 
 puts first_grouping.keys.map { |provider| provider.object_id } 
 puts second_grouping.keys.map { |provider| provider.object_id } 
