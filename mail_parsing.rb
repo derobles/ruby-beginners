@@ -3,7 +3,6 @@ def group_mails( emails )
   emails_from = {}
 end
 
-
 users_emails = %w( bob@yahoo.fr 
                    roger57@hotmail.fr 
                    bigbox@yahoo.fr 
@@ -12,20 +11,28 @@ users_emails = %w( bob@yahoo.fr
                    monsieur.mack@gmail.com )
                    
 
-puts group_mails( users_emails ) 
+first_grouping = group_mails( users_emails ) 
 
-# => {
-#     "yahoo" => ["bob@yahoo.fr", "bigbox@yahoo.fr"], 
+puts first_grouping 
+
+# => {"yahoo" => ["bob@yahoo.fr", "bigbox@yahoo.fr"], 
 #     "hotmail" => ["roger57@hotmail.fr"], 
 #     "lewagon" => ["boris@lewagon.org"], 
-#     "gmail" => ["monsieur.olivier@gmail.com", "monsieur.mack@gmail.com"]
-#     }
+#     "gmail" => ["monsieur.olivier@gmail.com", 
+#     "monsieur.mack@gmail.com"]}
 
 
 # Why Symbols ?
-first_grouping = group_mails( users_emails ) 
-second_grouping = group_mails( users_emails ) 
+new_emails = %w( bob@yahoo.fr 
+                 roger57@hotmail.fr 
+                 bigbox@yahoo.fr 
+                 boris@lewagon.org 
+                 monsieur.olivier@gmail.com 
+                 monsieur.mack@gmail.com
+                 monsieur.romain@gmail.com )
+                  
+                   
+second_grouping = group_mails( new_emails ) 
 
 puts first_grouping.keys.map { |provider| provider.object_id } 
-puts second_grouping.keys.map { |provider| provider.object_id } 
-
+puts second_grouping.keys.map { |provider| provider.object_id }
