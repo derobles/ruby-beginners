@@ -14,11 +14,12 @@ users_emails = %w( bob@yahoo.fr
 
 puts group_mail( users_emails ) 
 
-# => {"yahoo" => ["bob@yahoo.fr", "bigbox@yahoo.fr"], 
+# => {
+#     "yahoo" => ["bob@yahoo.fr", "bigbox@yahoo.fr"], 
 #     "hotmail" => ["roger57@hotmail.fr"], 
 #     "lewagon" => ["boris@lewagon.org"], 
-#     "gmail" => ["monsieur.olivier@gmail.com", 
-#     "monsieur.mack@gmail.com"]}
+#     "gmail" => ["monsieur.olivier@gmail.com", "monsieur.mack@gmail.com"]
+#     }
 
 
 # Why Symbols ?
