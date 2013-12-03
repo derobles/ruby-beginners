@@ -1,7 +1,7 @@
 # Check your 06
 
 # Writes a program that checks if a phone number is a valid french number.
-# A french phone number should contain 10 numbers and starting with 0 or 12 numbmers stating with +33
+# A french phone number should contain 10 numbers and starting with 0 or 12 numbers starting with +33
 # Also you can accept phone number with delimiters between numbers.
 
 # Objective
