@@ -14,3 +14,6 @@ def hop_hop_hop( number_of_exercises )
     counter = 0
   end
 end
+
+hop_hop_hop( 6 )
+
