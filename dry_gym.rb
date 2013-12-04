@@ -9,15 +9,12 @@ calories = {
     'Sprite' => 170
 }
 
-
 meal = ['Cheese Burger','French fries','Sprite']
 total_calories = meal.inject(0){ |cal, product| calories[product] + cal }
 puts "There are #{total_calories} calories in your meal : #{meal.join(" + ")}"
 
-
 # A new Burger ! The Filet-of-Fish
 calories['Filet of Fish'] = 100   # Let's add it
 meal[0] = 'Filet of Fish'         # We want to taste it, so we replace our old cheap Cheese Burger
-
 total_calories = meal.inject(0){ |cal, product| calories[product] + cal }
 puts "There are #{total_calories} calories in your meal : #{meal.join(" + ")}"
