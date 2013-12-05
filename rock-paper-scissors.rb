@@ -13,23 +13,19 @@ def rps_tournament_winner(tournament)
   "not implemented yet !"
 end
 
-def main
-  # Testing winner of a single game
-  single_game = [ [ "Bob", "P" ], [ "Mack", "S" ] ]
-  puts rps_game_winner(single_game)
+# Testing winner of a single game
+single_game = [ [ "Bob", "P" ], [ "Mack", "S" ] ]
+puts rps_game_winner(single_game)
   
-  # Testing winner of the tournament !
-  tournament = [
-                  [
-                    [ ["Bob", "P"], ["Mack", "S"] ],
-                    [ ["Olive", "R"], ["Ben", "S"] ]
-                  ],
-                  [
-                    [ ["Mathieu", "S"], ["Romain", "P"] ],
-                    [ ["Wally.", "R"], ["Marty", "P"] ]
-                  ]
+# Testing winner of the tournament !
+tournament = [
+                [
+                  [ ["Bob", "P"], ["Mack", "S"] ],
+                  [ ["Olive", "R"], ["Ben", "S"] ]
+                ],
+                [
+                  [ ["Mathieu", "S"], ["Romain", "P"] ],
+                  [ ["Wally.", "R"], ["Marty", "P"] ]
                 ]
-                
-  puts rps_tournament_winner tournament
-  
-end
+              ]
+puts rps_tournament_winner(tournament)
