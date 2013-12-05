@@ -1,4 +1,4 @@
-def bugged_concatenate( array )
+def bugged_concatenate(array)
   # 2. fix the code: TypeError
   puts array.inject("") { |output, element| output + element }.upcase
 end
