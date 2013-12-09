@@ -11,12 +11,14 @@ raise "Position must be between 1 and 100" unless Grid_POSITIONS.include? @posit
   end
   
 def play
+  if(  self.status_Player==:play   ) 
     @iterations += 1
 if rand(1..100) < 50 ; move(rand(1..10))
   else
         move(-rand(1..10))
 end
   end
+end
   
 def status_Player
     if( @position >   100 )
@@ -38,7 +40,9 @@ player.play
 puts player.status_Player == :play # true
 puts player.iterationsNumber == 1 # true
 puts player.position <= 60 && player.position >= 40 # true
-  
+(1..10000).each { |i| player.play }
+# Player very likely to loose or win the 10000th iteration
+puts player.status_Player == :loose || player.status_Player == :win
   
 begin
   Player_moving.new(110)
